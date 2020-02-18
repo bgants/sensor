@@ -14,7 +14,6 @@
 		<groupId>com.gants</groupId>
 		<version>2.2.2.RELEASE</version>
 	</parent>
-	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>com.gants</groupId>

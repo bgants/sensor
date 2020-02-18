@@ -42,6 +42,30 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>fabric8-maven-plugin</artifactId>
+				<version>4.2.0</version>
+				<configuration>
+					<skip>false</skip>
+					<registry></registry>
+					<verbose>true</verbose>
+					<images>
+						<image>
+							<name>sensor-rest</name>
+							<registry></registry>
+							<build>
+								<dockerFileDir>${project.basedir}</dockerFileDir>
+								<dockerFile>Dockerfile</dockerFile>
+								<tags>
+									<tag>latest</tag>
+								</tags>
+							</build>
+						</image>
+					</images>
+				</configuration>
+			</plugin>
+
 		</plugins>
 	</build>
 

@@ -57,35 +57,9 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
-        <configuration>
-          <release>11</release>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>io.fabric8</groupId>
         <artifactId>fabric8-maven-plugin</artifactId>
         <version>4.2.0</version>
-        <configuration>
-          <skip>true</skip>
-          <registry></registry>
-          <verbose>true</verbose>
-          <images>
-            <image>
-              <name>e</name>
-              <registry></registry>
-              <build>
-                <dockerFileDir>${project.basedir}</dockerFileDir>
-                <dockerFile>Dockerfile</dockerFile>
-                <tags>
-                  <tag>latest</tag>
-                </tags>
-              </build>
-            </image>
-          </images>
-        </configuration>
       </plugin>
     </plugins>
   </build>
