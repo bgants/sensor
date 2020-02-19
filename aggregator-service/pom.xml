@@ -77,7 +77,7 @@
 					<verbose>true</verbose>
 					<images>
 						<image>
-							<name>sensor-aggregator</name>
+							<name>aggregator-service</name>
 							<registry></registry>
 							<build>
 								<dockerFileDir>${project.basedir}</dockerFileDir>
